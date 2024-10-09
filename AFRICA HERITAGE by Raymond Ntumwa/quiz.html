@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray's Heritage - Heritage Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ray's Heritage</h1>
+        <p>Test Your Knowledge of African Heritage</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="map.html">Interactive Map</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="quiz.html">Heritage Quiz</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section id="quiz">
+            <h2>Heritage Quiz</h2>
+            <p>Answer the following questions to test your knowledge about African heritage.</p>
+            <div id="quiz-container">
+                <div id="question">Loading question...</div>
+                <div id="choices">
+                    <!-- Choices will be dynamically inserted here -->
+                </div>
+                <button id="next-button" class="quiz-button">Next Question</button>
+            </div>
+            <div id="result" class="hidden">
+                <h3>Your Score: <span id="score"></span></h3>
+                <button onclick="restartQuiz()" class="quiz-button">Restart Quiz</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ray's Heritage. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
